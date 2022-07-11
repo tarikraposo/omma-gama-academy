@@ -5,7 +5,7 @@
     font-family: 'Mingzat', sans-serif;
 }
 body{
-    margin: 0;
+    margin: 0px 150px 0px 150px;
     padding: 0;
     height: 100vh;
 }
@@ -57,7 +57,6 @@ footer .p-footer{
    align-items: center;
 }
 .box {
-    
     padding: 10px;
     height: 100%;
 }
@@ -184,3 +183,48 @@ iframe{
     text-decoration: none;
     color: white;
 }
+.index-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    'box-top box-top box-top'
+    'box-center box-center box-center'
+    'box-bottom box-bottom box-bottom';
+    position: relative;
+  }
+  .box-index{
+    background-color: #bdbdbd;
+    border:  1px solid black;
+  }
+  .box-top{
+    grid-area: box-top;
+    width: 100%;
+    height: 638.18px;
+    background: linear-gradient(0deg, rgba(255, 193, 7, 0.4),
+     rgba(255, 193, 7, 0.4)), 
+    url(../img/banner_1.jpeg);
+    position: absolute;
+  }
+
+  .box-center{
+    margin: 50px;
+    grid-area: box-center;
+    text-align: center;
+  }
+  .box-center img{
+    padding: 30px;
+    width: 345px;
+    height: 342px;
+
+  }
+  .box-bottom{
+    grid-area: box-bottom;
+
+  }
+  .box-bottom img{
+    width: 100%;
+    height: 638.18px;
+    background: linear-gradient(0deg, rgba(255, 193, 7, 0.4),
+     rgba(255, 193, 7, 0.4)), 
+    url(public/img/banner_1.jpeg);
+  }
